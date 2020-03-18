@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Bin</title>
+    <link rel="stylesheet" href="file:///android_asset/css/bootstrap.min.css">
+    <link href="file:///android_asset/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="file:///android_asset/css/my_style.css">
+    <link rel="stylesheet" href="file:///android_asset/css/checknet.css">
+    <!-- jQuery library -->
+    <script src="file:///android_asset/js/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="file:///android_asset/js/bootstrap.min.js"></script>
+    <script src="file:///android_asset/js/bootstrap-toggle.min.js"></script>
+    <!--Check net -->
+    <script src="file:///android_asset/js/jquery.checknet-1.6.min.js"></script>
+    <!--My js-->
+    <script src="file:///android_asset/js/main.js"></script>
+
+</head>
+<body>
+<div class="navbar-more-overlay"></div>
+<nav id="myNav" class="navbar navbar-inverse navbar-fixed-top animate">
+    <div class="container">
+        <div class="navbar-footer hidden-xs">
+            <a class="navbar-brand" href="#">VST</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right mobile-bar">
+            <li>
+                <a onclick="home()" href="#">
+                    <span class="menu-icon glyphicon glyphicon-home"></span>
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="#" onclick="control()">
+                    <span class="menu-icon glyphicon glyphicon-phone"></span>
+                    <span class="visible-xs">Control</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" onclick="setting()">
+                    <span class="menu-icon glyphicon glyphicon-cog"></span>
+                    Setting
+                </a>
+            </li>
+            <li>
+                <a href="#" onclick="about()">
+                    <span class="menu-icon glyphicon glyphicon-info-sign"></span>
+                    <span class="hidden-xs">About the Boat</span>
+                    <span class="visible-xs">About</span>
+                </a>
+            </li>
+            <li class="hidden-xs">
+                <a href="#">
+                    <span class="menu-icon fa fa-picture-o"></span>
+                    Photos
+                </a>
+            </li>
+
+            <li class="hidden-xs">
+                <a href="#">
+                    <span class="menu-icon fa fa-bell-o"></span>
+                    Reservations
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<header id="siteHead" style="display:none;">
+    <hgroup>
+        <h4>Internet Information</h4>
+        <h2 id="tagLine">No Internet connection detected, disabled features will be re-enabled when a connection is detected.</h2>
+    </hgroup>
+</header>
+
+<section id="home" class="container">
+    <div class="col-xs-12 col-sm-12">
+        <div class="rows">
+            <div class="rows text-center" style="margin-top:80px; margin-bottom:20px;">
+                <h3>VIET NAM SMART THINGS</h3>
+            </div>
+            <div class="rows">
+                IP Address: <input id="ipaddress" type="text" class="form-control"/>
+                Port:
+                <input id="port" type="number" class="form-control"/>
+            </div>
+            <div class="rows text-center">
+                <span id="errorMessage"></span>
+                <br/>
+                <button id="btnConnect" type="button" class="btn btn-info" onclick="connectServer()">CONNECT</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="control" class="container" style="display:none;">
+    <div class="col-xs-12 col-sm-12">
+        <div class="rows text-center" style="margin-bottom:50px;">
+            <h3>DEVICES CONTROL</h3>
+        </div>
+        <div class="rows text-center" style="display:none">
+            <button type="button" class="btn btn-info" onclick="readAll()">READ ALL</button>
+            <button type="button" class="btn btn-info" onclick="writeAll()">WRITE ALL</button>
+        </div>
+        <div id='divContent'>
+
+        </div>
+    </div>
+</section>
+
+<section id="setting" class="container" style="display:none;">
+    <div class="col-xs-12 col-sm-12">
+        <div class="rows text-center" style="margin-top:80px; margin-bottom:20px;">
+            <!--<button id="UpdateAll" type="button" class="btn btn-info" onclick="updateAll()" style="margin-top:5px; margin-bottom:10px;">UPDATE</button> <br/>-->
+            <span>Device Id: </span>
+            <input id="newId" type="text" class="form-control"/>
+            <span>Device Name: </span>
+            <input id="newName" type="text" class="form-control"/>
+            <br/>
+            <button id="btnCreate" type="button" class="btn btn-success" onclick="createDevice()">CREATE DEVICE</button>
+        </div>
+        <div id='deviceList' class="table-responsive">
+        </div>
+
+        <!-- Modal -->
+        <div id="modalDevice" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Update Name Device</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="rows text-center">
+                            <button type="button" class="btn btn-info" onclick="readOne()">READ</button>
+                            <button type="button" class="btn btn-info" onclick="writeOne()">WRITE</button>
+                        </div>
+                        <div class="rows">
+                            <!--readonly-->
+                            <input id="deviceOldId" type="text" class="form-control" style="display:none;"/>
+                            <span>ID: </span> <input id="deviceNewId" type="text" class="form-control" />
+                            <span>Name: </span><input id="deviceName" type="text" class="form-control"/>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" onclick="updateDevice()">Update</button>
+                        <button type="button" class="btn btn-danger" onclick="deleteDevice()">Delete</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="container" style="display:none;">
+    <div class="col-xs-12 col-sm-12">
+        <div class="rows text-center" style="margin-bottom:50px;">
+            <h3>VST</h3>
+        </div>
+        <div class="rows">
+            <h2>Design By: <br/> Trương Khoan kmt</h2>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

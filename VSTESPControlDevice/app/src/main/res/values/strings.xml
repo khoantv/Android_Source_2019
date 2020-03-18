@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">VST ESP Control Device</string>
+    <!--Device -->
+    <string name="device_insert_success">Thêm thiết bị thành công!</string>
+    <string name="device_update_success">Sửa thành công!</string>
+    <string name="device_delete_success">Xóa thành công!</string>
+    <string name="device_insert_error">Không thêm được thiết bị. Vui lòng kiểm tra lại!</string>
+    <string name="device_update_error">Chưa sửa được thiết bị. Vui lòng kiểm tra lại!</string>
+    <string name="device_delete_error">Chưa xóa được thiết bị. Vui lòng kiểm tra lại!</string>
+    <!--Control -->
+    <string name="check_passsetup_error">Mật khẩu cài đặt không đúng!</string>
+    <string name="check_passlogin_error">Mật khẩu cài đặt không đúng!</string>
+    <string name="check_pass_success">Thay đổi mật khẩu thành công!</string>
+    <!--Setting-->
+
+    <!--Floor -->
+    <string name="floor_insert_success">Thêm tầng thành công!</string>
+    <string name="floor_update_success">Sửa thành công!</string>
+    <string name="floor_delete_success">Xóa thành công!</string>
+    <string name="floor_insert_error">Không thêm được tầng. Vui lòng kiểm tra lại!</string>
+    <string name="floor_update_error">Chưa sửa được tầng. Vui lòng kiểm tra lại!</string>
+    <string name="floor_delete_error">Chưa xóa được tầng. Vui lòng kiểm tra lại!</string>
+</resources>

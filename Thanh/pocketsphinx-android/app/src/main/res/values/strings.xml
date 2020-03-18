@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Điều khiển thiết bị</string>
+    <string name="TB1"> TB 1</string>
+    <string name="TB2"> TB 2</string>
+    <string name="TB3"> TB 3</string>
+    <string name="TB4"> TB 4</string>
+    <string name="TB5"> TB 5</string>
+    <string name="TB6"> TB 6</string>
+    <string name="TB7"> TB 7</string>
+    <string name="TB8"> TB 8</string>
+    <string name="TB9"> TB 9</string>
+    <string name="TB10"> TB 10</string>
+    <string name="TB11">  TB 11</string>
+    <string name="TB12">  TB 12</string>
+</resources>

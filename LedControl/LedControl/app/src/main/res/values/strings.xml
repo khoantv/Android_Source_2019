@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">VST Control Edge</string>
+    <string name="app_name_inside">ĐIỀU KHIỂN GÓC MÁY BAY</string>
+    <string name="TB1"> TB 1</string>
+    <string name="TB2"> TB 2</string>
+    <string name="TB3"> TB 3</string>
+    <string name="TB4"> TB 4</string>
+    <string name="TB5"> TB 5</string>
+    <string name="TB6"> TB 6</string>
+    <string name="TB7"> TB 7</string>
+    <string name="TB8"> TB 8</string>
+    <string name="TB9"> TB 9</string>
+    <string name="TB10"> TB 10</string>
+    <string name="TB11">  TB 11</string>
+    <string name="TB12">  TB 12</string>
+    <string name="setmac"> MAC-address of Module:</string>
+    <string name="savePhone"> Lưu </string>
+    <string name="phoneNotCorrect"> Số điện thoại không đúng.</string>
+    <string name="warn"> Cảnh Báo!</string>
+    <string name="warnInfor"> Bạn có chắc chắn muốn thoát?</string>
+    <string name="yes"> Có</string>
+    <string name="no"> Không</string>
+    <string name="sent"> Sent </string>
+    <string name="reset"> Reset </string>
+    <string name="setmacaddress"> Set MAC-address </string>
+    <string name="setBluetooth"> On/Off Bluetooth </string>
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">scanning for devices...</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan for devices</string>
+</resources>

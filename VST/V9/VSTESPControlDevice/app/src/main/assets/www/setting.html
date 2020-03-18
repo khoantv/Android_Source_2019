@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Setting</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="file:///android_asset/css/w3.css">
+	<link rel="stylesheet" href="file:///android_asset/css/setting.css">
+	<link rel="stylesheet" href="file:///android_asset/css/bootstrap.min.css">
+	<link rel="stylesheet" href="file:///android_asset/css/font-awesome.min.css">
+	<script src="file:///android_asset/js/jquery.min.js"></script>
+	<script src="file:///android_asset/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container-fluid" style="background-color:black;padding:10px;">
+		<span class="headpanel">Cài Đặt</span>
+		<span class="headpanel" style="float:right"><span onclick="backToControl()" class="glyphicon glyphicon-circle-arrow-left"></span> Quay lại</span>
+	</div>
+
+	<div class="w3-container text-center" style="margin-top: 50px;">
+	  <div class="btn-group-vertical" style="width: 300px; font-size: 30sp;">
+		<button id="btnDevice" type="button" class="btnStyle w3-large">Quản lý thiết bị</button><br/>
+		<button id="btnLogin" type="button" class="btnStyle w3-large">Đổi Pass Login</button><br/>
+		<button id="btnSetup" type="button" class="btnStyle w3-large">Đổi Pass Setup</button><br/>
+		<button id="btnLogout" type="button" class="btnStyle w3-large">Đăng xuất</button>
+		<button id="btnBack" type="button" class="btnStyle w3-large" onclick="backToControl()">Quay lại</button>
+	  </div>
+	</div>
+
+	<!-- Modal Change Pass Login && Setup-->
+	<div id="modalChangePass" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">ĐỔI MẬT KHẨU</h4>
+				</div>
+				<div class="modal-body">
+					<h3>Nhập thông tin mật khẩu:</h3>
+					<input id="typeChangePass" type="text" style="display:none;"/>
+					<div class="input-group">
+						<span class="input-group-addon" id="span_old_pass">Mật khẩu cũ </span>
+						<input id="in_old_pass" type='number' class="form-control" placeholder="" aria-describedby="span_old_pass" />
+					</div>
+					<div class="input-group">
+						<span class="input-group-addon" id="span_new_1">Mật khẩu mới (1): </span>
+						<input id="in_new_pass1" type='number' class="form-control" placeholder="" aria-describedby="span_new_1" onkeypress="validatePass()"/>
+					</div>
+					<div class="input-group">
+						<span class="input-group-addon" id="span_new_2">Mật khẩu mới (2): </span>
+						<input id="in_new_pass2" type='number' class="form-control" placeholder="" aria-describedby="span_new_2" onkeypress="comparePass()"/>
+					</div>
+					<div>
+						<h3 id="passalert" style="color:red;"></h3>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button id="btnCheck" type="button" class="btn btn-default" data-dismiss="modal" onclick="changePass()">Lưu</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- Modal đăng xuất -->
+	<div id="modalLogout" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Đăng xuất khỏi phòng</h4>
+				</div>
+				<div class="modal-body">
+					<p>Bạn có chắc chắn muốn đăng xuất?.</p>
+				</div>
+				<div class="modal-footer">
+					<button id="btnDangXuat" type="button" class="btn btn-default" data-dismiss="modal">Có</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Không</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="file:///android_asset/js/setting.js"></script>
+</body>
+</html>

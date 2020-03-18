@@ -1,0 +1,97 @@
+0.3
+22 n_base
+65 n_tri
+348 n_state_map
+130 n_tied_state
+66 n_tied_ci_state
+22 n_tied_tmat
+#
+# Columns definitions
+#base lft  rt p attrib tmat      ... state id's ...
+ +HN+   -   - - filler    0      0      1      2 N
++NHN+   -   - - filler    1      3      4      5 N
+ +SN+   -   - - filler    2      6      7      8 N
++UNK1+   -   - - filler    3      9     10     11 N
++UNK2+   -   - - filler    4     12     13     14 N
++UNK3+   -   - - filler    5     15     16     17 N
+  SIL   -   - - filler    6     18     19     20 N
+   ar   -   - -    n/a    7     21     22     23 N
+   as   -   - -    n/a    8     24     25     26 N
+    d   -   - -    n/a    9     27     28     29 N
+   ie   -   - -    n/a   10     30     31     32 N
+   if   -   - -    n/a   11     33     34     35 N
+   ir   -   - -    n/a   12     36     37     38 N
+   is   -   - -    n/a   13     39     40     41 N
+    l   -   - -    n/a   14     42     43     44 N
+   nc   -   - -    n/a   15     45     46     47 N
+   ng   -   - -    n/a   16     48     49     50 N
+   ph   -   - -    n/a   17     51     52     53 N
+    t   -   - -    n/a   18     54     55     56 N
+   tr   -   - -    n/a   19     57     58     59 N
+   uf   -   - -    n/a   20     60     61     62 N
+  uwf   -   - -    n/a   21     63     64     65 N
+   ar  ph  ir i    n/a    7     66     67     68 N
+   as  tr  is i    n/a    8     69     70     71 N
+    d SIL uwf b    n/a    9     74     76     78 N
+    d  if uwf b    n/a    9     72     75     77 N
+    d  ir uwf b    n/a    9     73     76     78 N
+    d  is uwf b    n/a    9     72     76     78 N
+    d  nc uwf b    n/a    9     72     75     77 N
+    d  ng uwf b    n/a    9     72     75     77 N
+   ie   t  nc i    n/a   10     79     80     81 N
+   if  uf SIL e    n/a   11     82     83     85 N
+   if  uf   d e    n/a   11     82     84     86 N
+   if  uf   l e    n/a   11     82     83     85 N
+   if  uf  ph e    n/a   11     82     84     86 N
+   if  uf   t e    n/a   11     82     83     86 N
+   if  uf  tr e    n/a   11     82     84     86 N
+   ir  ar SIL e    n/a   12     87     89     90 N
+   ir  ar   d e    n/a   12     88     89     90 N
+   ir  ar   l e    n/a   12     87     89     90 N
+   ir  ar  ph e    n/a   12     87     89     90 N
+   ir  ar   t e    n/a   12     87     89     90 N
+   ir  ar  tr e    n/a   12     87     89     90 N
+   is  as SIL e    n/a   13     91     92     93 N
+   is  as   d e    n/a   13     91     92     93 N
+   is  as   l e    n/a   13     91     92     93 N
+   is  as  ph e    n/a   13     91     92     93 N
+   is  as   t e    n/a   13     91     92     93 N
+   is  as  tr e    n/a   13     91     92     93 N
+    l SIL  uf b    n/a   14     94     97     99 N
+    l  if  uf b    n/a   14     94     96     98 N
+    l  ir  uf b    n/a   14     94     96     98 N
+    l  is  uf b    n/a   14     94     96     98 N
+    l  nc  uf b    n/a   14     95     96     98 N
+    l  ng  uf b    n/a   14     95     96     98 N
+   nc  ie SIL e    n/a   15    100    101    102 N
+   nc  ie   d e    n/a   15    100    101    104 N
+   nc  ie   l e    n/a   15    100    101    103 N
+   nc  ie  ph e    n/a   15    100    101    102 N
+   nc  ie   t e    n/a   15    100    101    102 N
+   nc  ie  tr e    n/a   15    100    101    102 N
+   ng uwf SIL e    n/a   16    105    107    109 N
+   ng uwf   d e    n/a   16    105    106    108 N
+   ng uwf   l e    n/a   16    105    106    108 N
+   ng uwf  ph e    n/a   16    105    106    108 N
+   ng uwf   t e    n/a   16    105    106    108 N
+   ng uwf  tr e    n/a   16    105    106    108 N
+   ph SIL  ar b    n/a   17    111    112    113 N
+   ph  if  ar b    n/a   17    110    112    113 N
+   ph  ir  ar b    n/a   17    110    112    113 N
+   ph  is  ar b    n/a   17    110    112    113 N
+   ph  nc  ar b    n/a   17    111    112    113 N
+   ph  ng  ar b    n/a   17    110    112    113 N
+    t SIL  ie b    n/a   18    114    117    118 N
+    t  if  ie b    n/a   18    115    116    119 N
+    t  ir  ie b    n/a   18    114    116    118 N
+    t  is  ie b    n/a   18    114    116    118 N
+    t  nc  ie b    n/a   18    115    116    119 N
+    t  ng  ie b    n/a   18    115    116    119 N
+   tr SIL  as b    n/a   19    121    122    123 N
+   tr  if  as b    n/a   19    120    122    123 N
+   tr  ir  as b    n/a   19    121    122    123 N
+   tr  is  as b    n/a   19    121    122    123 N
+   tr  nc  as b    n/a   19    120    122    123 N
+   tr  ng  as b    n/a   19    120    122    123 N
+   uf   l  if i    n/a   20    124    125    126 N
+  uwf   d  ng i    n/a   21    127    128    129 N

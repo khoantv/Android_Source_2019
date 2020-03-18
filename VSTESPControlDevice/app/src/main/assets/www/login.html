@@ -1,0 +1,64 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Bin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="file:///android_asset/css/bootstrap.min.css">
+    <script src="file:///android_asset/js/jquery.min.js"></script>
+    <script src="file:///android_asset/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="file:///android_asset/css/login.css">
+    <script>
+        $(document).ready(function() {
+            Android.showAccount();
+        });
+        function Login()
+        {
+            user = $("#user").val();
+            pass = $("#pass").val();
+            Android.login(user, pass);
+        };
+        function showAccount(user, pass)
+        {
+            $("#user").val(user);
+            $("#pass").val(pass);
+        };
+    </script>
+  </head>
+  <body style='text-align:center;width:90%;margin:0px auto'>
+    <div id="con">
+      <div id="content">
+          <div >
+              <p class="title">ĐIỀU KHIỂN THIẾT BỊ TỪ XA</p>
+              <p style='color:blue;font-size:15pt;'><i>Version 1.0</i></p>
+          </div>
+          <div>
+              <!--width: 173px; height:122px-->
+              <img class="logo" src="file:///android_asset/images/logo.png" style="width: 40%; height:40%"/>
+          </div>
+          <div style="width:100%;" data-spy="affix" data-offset-top="210">
+              <table >
+                  <tr >
+                      <td> <input id="user" type='text' class="form-control" style="width:200px" placeholder="User Name"></input></td>
+                  </tr>
+                  <tr>
+                      <td ><input id="pass" type='password' class="form-control" style="width:200px" placeholder="Pass word"></input></td>
+                  </tr>
+                  <tr>
+                      <td ><button type='button' class="btn btn-info" onclick="Login()">Đăng nhập</button> </td>
+                  </tr>
+              </table>
+          </div>
+          <div style="width:100%; height: 100px" >
+
+          </div>
+      </div>
+      <div id="footer" style='text-align:center'>
+          <!--class="footer"-->
+          <p style='color:blue;font-size:11pt;' >Đăng nhập để truy cập vào Master Module. Nếu quên Pass có thể xem trực tiếp trên thiết bị</p>
+          <p style='color:blue;font-size:10pt;'>Truy cập: <a href="www.vste.vn">www.vste.vn</a> để biết thêm chi tiết</p>
+      </div>
+    </div>
+</body>
+</html>

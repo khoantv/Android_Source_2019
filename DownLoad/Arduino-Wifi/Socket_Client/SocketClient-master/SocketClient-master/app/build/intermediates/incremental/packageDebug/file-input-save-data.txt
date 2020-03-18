@@ -1,0 +1,21 @@
+#Internal package file, do not edit.
+#Thu Oct 26 10:50:33 ICT 2017
+2.base=D\:\\Google Driver\\Current_Code\\Android\\Arduino-Wifi\\Socket_Client\\SocketClient-master\\SocketClient-master\\app\\build\\intermediates\\res\\resources-debug.ap_
+5.file=D\:\\Google Driver\\Current_Code\\Android\\Arduino-Wifi\\Socket_Client\\SocketClient-master\\SocketClient-master\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
+5.set=DEX
+3.base=D\:\\Google Driver\\Current_Code\\Android\\Arduino-Wifi\\Socket_Client\\SocketClient-master\\SocketClient-master\\app\\build\\intermediates\\res\\resources-debug.ap_
+2.set=ANDROID_RESOURCE
+4.base=D\:\\Google Driver\\Current_Code\\Android\\Arduino-Wifi\\Socket_Client\\SocketClient-master\\SocketClient-master\\app\\build\\intermediates\\res\\resources-debug.ap_
+count=6
+0.file=D\:\\Google Driver\\Current_Code\\Android\\Arduino-Wifi\\Socket_Client\\SocketClient-master\\SocketClient-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\ic_launcher.png
+5.base=D\:\\Google Driver\\Current_Code\\Android\\Arduino-Wifi\\Socket_Client\\SocketClient-master\\SocketClient-master\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+4.set=ANDROID_RESOURCE
+1.file=D\:\\Google Driver\\Current_Code\\Android\\Arduino-Wifi\\Socket_Client\\SocketClient-master\\SocketClient-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\activity_main.xml
+1.set=ANDROID_RESOURCE
+2.file=D\:\\Google Driver\\Current_Code\\Android\\Arduino-Wifi\\Socket_Client\\SocketClient-master\\SocketClient-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\menu\\main.xml
+0.base=D\:\\Google Driver\\Current_Code\\Android\\Arduino-Wifi\\Socket_Client\\SocketClient-master\\SocketClient-master\\app\\build\\intermediates\\res\\resources-debug.ap_
+3.file=D\:\\Google Driver\\Current_Code\\Android\\Arduino-Wifi\\Socket_Client\\SocketClient-master\\SocketClient-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\resources.arsc
+3.set=ANDROID_RESOURCE
+1.base=D\:\\Google Driver\\Current_Code\\Android\\Arduino-Wifi\\Socket_Client\\SocketClient-master\\SocketClient-master\\app\\build\\intermediates\\res\\resources-debug.ap_
+4.file=D\:\\Google Driver\\Current_Code\\Android\\Arduino-Wifi\\Socket_Client\\SocketClient-master\\SocketClient-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\AndroidManifest.xml
+0.set=ANDROID_RESOURCE

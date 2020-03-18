@@ -1,0 +1,4 @@
+#JSGF V1.0;
+grammar lenh;
+<lenh> = (tiến | lùi | trái | phải | dừng | unk | h_noise | nh_noise | street_noise);
+public <command> = <lenh>;

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Control</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="file:///android_asset/css/bootstrap.min.css">
+	<link rel="stylesheet" href="file:///android_asset/css/bootstrap-toggle.min.css">
+	<link rel="stylesheet" href="file:///android_asset/css/w3.css">
+	<link rel="stylesheet" href="file:///android_asset/css/control.css">
+	<script src="file:///android_asset/js/jquery.min.js"></script>
+	<script src="file:///android_asset/js/bootstrap.min.js"></script>
+	<script src="file:///android_asset/js/bootstrap-toggle.min.js"></script>
+	<script src="file:///android_asset/js/image_gif.js"></script>
+	<script src="file:///android_asset/js/control.js"></script>
+</head>
+<body>
+    <div class="w3-contain">
+		<!--<div class="w3-row w3-black" >-->
+
+		<!--</div>-->
+
+		<div class="container-fluid" style="background-color:black;padding:10px;" data-spy="affix" data-offset-top="30">
+			<span class="headpanel">Điều Khiển Thiết Bị</span>
+			<div style="float:right">
+				<button type="button" class="btn btn-warning headpanel" onclick="openSetting()">
+					<span class="glyphicon glyphicon-cog"></span>
+				</button>
+				<button type="button" class="btn btn-danger headpanel" onclick="openLogoutModal()">
+					<span class="glyphicon glyphicon-off"></span>
+				</button>
+			</div>
+		</div>
+
+		<!--Tạo danh sách các control để điều khiển -->
+        <div id='divContent' class="container-fluid text-center w3-contain">
+
+        </div>
+		<!-- Modal hỏi mật khẩu để đăng nhập -->
+		<div id="modalSetting" class="modal fade" role="dialog" style="text-align: center;">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">MẬT KHẨU CÀI ĐẶT</h4>
+					</div>
+					<div class="modal-body">
+						<h5>Nhập mật khẩu để cài đặt hệ thống: </h5>
+						<div class="input-group">
+						  <span class="input-group-btn" id="mk">
+							Mật khẩu cài đặt
+						  </span>
+							<input id="passSetup" type="password" class="form-control" aria-describedby="mk"  onkeyup="validatePass()"/>
+							<input id="chkShowHide" class="w3-check" type="checkbox" >
+							<label>Hiển thị mật khẩu</label>
+							<br/>
+							<input id="chkSavePass" class="w3-check" type="checkbox" checked="checked">
+							<label>Lưu mật khẩu</label>
+						</div>
+					</div>
+					<div>
+						<h3 id="passalert" style="color:red;"></h3>
+					</div>
+					<div class="modal-footer">
+						<button id="btnCheck" type="button" class="btn btn-info" onclick="checkPassSetup()" >OK</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal đăng xuất -->
+		<div id="modalLogout" class="modal fade" role="dialog" style="text-align: center;">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Đăng xuất khỏi phòng</h4>
+					</div>
+					<div class="modal-body">
+						<p>Bạn có chắc chắn muốn đăng xuất?.</p>
+					</div>
+					<div class="modal-footer">
+						<button onclick="logout()" type="button" class="btn btn-default" data-dismiss="modal">Có</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Không</button>
+					</div>
+				</div>
+			</div>
+		</div >
+    </div>
+</body>
+</html>

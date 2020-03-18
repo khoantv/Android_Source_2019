@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="16dp"
+    android:gravity="left">
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        card_view:cardBackgroundColor="#edefef"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardElevation="1dp"
+        card_view:cardUseCompatPadding="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="8dp"
+            android:textColor="#607D8B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Messenge from Server"
+            android:id="@+id/tv_messenge" />
+    </android.support.v7.widget.CardView>
+</LinearLayout>

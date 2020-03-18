@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Hệ Thống Tưới Nước Tự Động</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Tên đăng nhập</string>
+    <string name="prompt_password">Mật khẩu </string>
+    <string name="action_sign_in">Đăng Nhập</string>
+    <string name="action_sign_in_short">Đăng Nhập</string>
+    <string name="error_invalid_email">Tên đăng nhập không đúng</string>
+    <string name="error_invalid_password">Mật khẩu quá ngắn</string>
+    <string name="error_incorrect_password">Tên đăng nhập hoặc mật khẩu không đúng!</string>
+    <string name="error_field_required">Bắt buộc</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <!-- Strings related to login -->
+    <string name="on_protect">Protect On</string>
+    <string name="off_protect">Protect Off</string>
+    <string name="power_on">Power On</string>
+    <string name="power_off">Power Off</string>
+    <string name="check_infor">Check Information</string>
+    <string name="option">Option</string>
+
+    <!-- Strings related to login -->
+    <string name="phone">Phone number: </string>
+    <string name="savePhone"> Lưu </string>
+    <string name="phoneNotCorrect"> Phone number is not correct</string>
+    <string name="warn"> Warning!</string>
+    <string name="warnInfor"> Are you sure to quit? </string>
+    <string name="yes"> Yes </string>
+    <string name="no"> No </string>
+    <string name="sent"> Sent </string>
+    <string name="reset"> Reset </string>
+    <string name="setphoneaddress"> Set MAC-address </string>
+
+    <string name="temperature"> Moisture:  </string>
+    <string name="pump_status"> Pump Status:  </string>
+    <string name="title_activity_main_new">MainNew</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main2">Phần Mềm Tưới Nước Tự Động</string>
+    <string name="percent_moisture">% độ ẩm</string>
+    <string name="check">Check</string>
+    <string name="off">OFF</string>
+    <string name="on">On</string>
+    <string name="set_moisture">SET Moisture</string>
+    <string name="set_phone_number">Nhập số điện thoại</string>
+
+    <!--About-->
+    <string name="cn_detai">Chủ Nhiệm Đề Tài</string>
+    <string name="dhd">TS. Đào Huy Du</string>
+    <string name="dhd_phone">SĐT: 0912347222</string>
+    <string name="dhd_email">Email: daohuydu@tnut.edu.vn</string>
+    <string name="xay_dung_pm">Xây dựng phần mềm:</string>
+    <string name="my_name">KS. Trương Văn Khoan</string>
+    <string name="my_phone">SĐT: 01673632275</string>
+    <string name="my_email">Email: truongvankhoan@tnut.edu.vn</string>
+</resources>

@@ -1,0 +1,63 @@
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+
+#con {
+   min-height:100%;
+   position:relative;
+}
+
+#content {
+   height: auto /* Changed this height: 1000px; */
+}
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height: auto;  /*60px;*/
+}
+
+.title
+{
+  padding-top: 10px;
+  color:blue;
+  font-size:18pt;
+  font-weight:bold;
+}
+
+.logo
+{
+  margin:20px auto;  
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+
+table{  
+  padding: 10px;
+  margin:0 auto;
+}
+
+th, td{
+  padding: 10px;
+}
+
+.affix {
+  top: 0;
+  width: 100%;
+  z-index: 9999 !important;
+}
+
+.affix + .container-fluid {
+  padding-top: 70px;
+}

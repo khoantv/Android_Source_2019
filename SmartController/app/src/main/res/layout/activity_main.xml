@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context="kmt.jimmy.smartcontroller.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="79dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imbProtect"
+        android:onClick="fSetProtect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/lock"
+        android:contentDescription="@string/off_protect"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/imbPowerOff"
+        app:layout_constraintRight_toRightOf="@+id/imbPowerOff"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintLeft_toLeftOf="@+id/imbPowerOff" />
+
+    <TextView
+        android:id="@+id/txtProtect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/off_protect"
+        android:textColor="@android:color/background_light"
+        android:textSize="25sp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/imbProtect"
+        android:layout_marginTop="7dp"
+        app:layout_constraintTop_toBottomOf="@+id/imbProtect" />
+
+    <ImageView
+        android:id="@+id/imbPowerOff"
+        android:onClick="fSetPower"
+        android:contentDescription="@string/power_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/power_off"
+        android:layout_marginEnd="16dp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/imbCheckInfor"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="30dp" />
+
+    <TextView
+        android:id="@+id/txtPower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/power_off"
+        android:textColor="@android:color/background_light"
+        android:textSize="25sp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/imbPowerOff"
+        android:layout_marginBottom="104dp"
+        android:layout_marginRight="0dp" />
+
+    <ImageView
+        android:id="@+id/imbCheckInfor"
+        android:onClick="fGetInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/check_infor"
+        app:srcCompat="@drawable/information"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/imbPowerOff"
+        app:layout_constraintTop_toBottomOf="@+id/txtPower"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/imbPowerOff" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/check_infor"
+        android:textColor="@android:color/background_light"
+        android:textSize="25sp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/imbCheckInfor"
+        app:layout_constraintTop_toBottomOf="@+id/imbCheckInfor" />
+
+    <ImageView
+        android:id="@+id/imbOption"
+        android:onClick="fOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/option"
+        android:layout_marginStart="16dp"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

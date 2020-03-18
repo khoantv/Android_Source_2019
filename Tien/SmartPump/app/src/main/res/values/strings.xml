@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Smart Pump</string>
+    <string name="on_protect">Protect On</string>
+    <string name="off_protect">Protect Off</string>
+    <string name="power_on">Power On</string>
+    <string name="power_off">Power Off</string>
+    <string name="check_infor">Check Information</string>
+    <string name="option">Option</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="phone">Phone number: </string>
+    <string name="luu"> Save </string>
+    <string name="phoneNotCorrect"> Phone number is not correct</string>
+    <string name="warn"> Warning!</string>
+    <string name="warnInfor"> Are you sure to quit? </string>
+    <string name="yes"> Yes </string>
+    <string name="no"> No </string>
+    <string name="sent"> Sent </string>
+    <string name="reset"> Reset </string>
+    <string name="setphoneaddress"> Set MAC-address </string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."
+    </string>
+
+    <string name="temperature"> Moisture:  </string>
+    <string name="pump_status"> Pump Status:  </string>
+
+    <string name="setTime"> Thời gian tưới  </string>
+    <string name="setThreshold"> Ngưỡng độ ẩm  </string>
+    <string name="set"> SET  </string>
+
+</resources>

@@ -1,0 +1,41 @@
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+   width:100%;
+   background:#7fdbef;
+   text-align: center;
+}
+
+.title
+{
+  padding-top: 10px;
+  color:red;
+  font-size:18pt;
+  font-weight:bold;
+}
+
+.myversion
+{
+  color:red;
+  font-size:15pt;
+}
+
+table{
+  margin:0 auto;
+}
+
+th, td{
+  padding: 10px;
+}
+
+input {
+   text-align: center;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="file:///android_asset/css/bootstrap.min.css">
+  <script src="file:///android_asset/js/jquery.min.js"></script>
+  <script src="file:///android_asset/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="file:///android_asset/css/start.css">
+    <script>
+        $(document).ready(function() {
+            Android.showMyIp();
+        });
+
+        function showIpPort(floor, ip, port)
+        {
+            $("#floor").val(floor);
+            $("#ip").val(ip);
+            $("#port").val(port);
+        };
+        function ConnectESP()
+        {
+            try{
+                floor = $("#floor").val();
+                ip = $("#ip").val();
+                port = $("#port").val();
+                Android.ConnectESP(floor, ip, port);
+            }
+            catch(ex)
+            {
+                Console.log(ex);
+            }
+        }
+    </script>
+</head>
+<body>
+    <div  style='text-align:center;' id='con'>
+         <div id="content">
+             <p class="title">ĐIỀU KHIỂN THIẾT BỊ TỪ XA</p>
+             <p style='color:blue;font-size:15pt;'><i>Version 1.0</i></p>
+             <div >
+                 <img class="logo" src="file:///android_asset/images/logo.png" style="width: 40%; height:40%"/>
+             </div>
+             <div style="width:100%; text-align:center;" data-spy="affix" data-offset-top="210">
+                 <!-- <input class="form-control" type='text' style="width:80px" ></input> -->
+                 <table >
+                     <tr>
+                         <td colspan="2"><input id="floor" class="form-control" type='text' style="width:200px" placeholder="Floor"></input></td>
+                     </tr>
+                     <tr >
+                         <td><input id="ip" class="form-control" type='text' style="width:200px" placeholder="Ip Address"></input></td>
+                         <td><input id="port" class="form-control" type='text' style="width:80px" placeholder="PORT"></input></td>
+                     </tr>
+                     <tr>
+                         <td colspan="2"><button id="btnConnect" class="btn btn-info" type='button' onclick="ConnectESP()">Kết nối</button></td>
+                     </tr>
+                 </table>
+             </div>
+             <div style="width:100%; height: 100px" >
+
+             </div>
+         </div>
+         <div id="footer" style='text-align:center'>
+             <p style='color:blue;font-size:11pt;' >Phần mềm sử dụng cho các sản phẩm điều khiển từ xa của VST sản xuất.</p>
+             <p style='color:blue;font-size:10pt;'>Truy cập: <a href="www.vste.vn">www.vste.vn</a> để biết thêm chi tiết</p>
+         </div>
+
+    </div>
+ </body>
+</html>

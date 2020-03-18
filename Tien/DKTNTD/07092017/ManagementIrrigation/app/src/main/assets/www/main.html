@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+  <link rel="stylesheet" href="file:///android_asset/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+  <script type="text/javascript" src="file:///android_asset/js/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+  <script type="text/javascript" src="file:///android_asset/js/bootstrap.min.js"></script>
+  <!--<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">-->
+  <link rel="stylesheet" href="file:///android_asset/css/bootstrap-toggle.min.css">
+  <!--<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>-->
+  <script type="text/javascript" src="file:///android_asset/js/bootstrap-toggle.min.js"></script>
+  <script type="text/javascript" src="file:///android_asset/js/MainScript.js"></script>
+  <style>
+    body {
+    background-image:url("http://img01.jituwang.com/170428/256974-1F42R3212585.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    }
+    html {
+        height: 100%
+    }
+  </style>
+</head>
+<body>  
+  <div class="col-md-12 text-center" style="color:white; font-weight:bold; font-size: 18px">Trường Đại Học Kỹ Thuật Công Nghiệp</div>
+  <div class="col-md-12 text-center"><img style="width: 100px; height:100px;" alt="Logo" src="http://vied.vn/imgs/eng/University/TNUT/logo_TNUT.png"> </img</div>
+  <div class="col-md-12 text-center" style="margin-top:30px;">    
+    <table class="table table-bordered" style="font-weight:bold; font-size: 18px">
+      <tr>
+        <td style="color:white"> Nhiệt Độ: <br/> <span id="temperature" style="color:red">0</span></td>
+        <td style="color:white"> Độ ẩm: <br/> <span id="humidity" style="color:red">0</span></td>
+      </tr>
+      <tr>
+        <td style="color:white"> Lượng nước: <br/>  <span id="water_level" style="color:red">0</span></td>
+        <td style="color:white"> Điện năng: <br/>  <span id="power" style="color:red">0</span></td>
+      </tr>
+    </table>  
+  </div>
+  <div class="col-md-12 text-center">
+    <h3 style="color:red; font-weight:bold; font-size: 25px">TRẠNG THÁI THIẾT BỊ</h3>
+  </div>
+  <div class="col-md-12 text-center">
+
+    <div class="checkbox" onclick="sendSMS()">
+      <label style="color:white; font-weight:bold; font-size: 18px"> Bơm 1 </label>  
+      <label>
+        <input type="checkbox" id="tool_one" data-toggle="toggle" data-onstyle="danger" data-on="Bật" data-off="Tắt">
+      </label>
+    </div>
+    <input type="text" id='toolStatus' style="display:none" va1ue="true"/>
+  </div>
+
+  <div class="footer navbar-fixed-bottom" style="color:Blue; font-weight:bold; font-size: 18px" >
+      <label>
+        Chủ nhiệm đề tài: 
+      </label>
+    <br/>
+      <label>
+        TS. ĐÀO HUY DU
+      </label>      
+  </div>  
+</body>
+</html>

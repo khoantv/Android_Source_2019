@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/background"
+    android:gravity="top|center"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:weightSum="1"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="kmt.truongkhoan.ledcontrol.MainActivity">
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name_inside"
+            android:textSize="25sp" />
+
+    </TableRow>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50sp"
+            android:text="X" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50sp"
+            android:text="Y" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:paddingBottom="30dp"
+        android:paddingTop="10dp">
+
+        <EditText
+            android:id="@+id/edtHistoryX"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:textSize="8sp"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:lines="10"
+            android:minLines="10"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical" />
+
+        <EditText
+            android:id="@+id/edtHistoryY"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:textSize="8sp"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:lines="10"
+            android:minLines="10"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtX"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            android:inputType="numberSigned"
+            android:text="0"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/edtY"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:inputType="numberSigned"
+            android:text="0"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnDecX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="-" />
+
+            <EditText
+                android:id="@+id/edtXChange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="1"
+                android:textAlignment="center"
+                android:textColor="@color/red"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btnInX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="+" />
+
+            <Button
+                android:id="@+id/btnDecY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="-" />
+
+            <EditText
+                android:id="@+id/edtYChange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="1"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:textColor="@color/red" />
+
+            <Button
+                android:id="@+id/btnInY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="+" />
+
+        </LinearLayout>
+
+    </TableRow>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <SeekBar
+            android:id="@+id/seekBarX"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:max="360" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+
+        <SeekBar
+            android:id="@+id/seekBarY"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:max="360" />
+    </LinearLayout>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnSendX"
+            style="@android:style/Widget.DeviceDefault.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEND X"
+            android:textColor="@android:color/background_light"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnSendY"
+            style="@android:style/Widget.DeviceDefault.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEND Y"
+            android:textColor="@android:color/background_light"
+            android:textSize="30sp" />
+    </TableRow>
+
+</LinearLayout>

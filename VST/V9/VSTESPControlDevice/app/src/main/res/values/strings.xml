@@ -1,0 +1,66 @@
+<resources>
+    <string name="app">SMART HOME</string>
+    <string name="app_name">Điều Khiển Thiết Bị</string>
+    <string name="ver">Version 1.0</string>
+    <!--Device -->
+    <string name="device_insert_success">Thêm thiết bị thành công!</string>
+    <string name="device_update_success">Sửa thành công!</string>
+    <string name="device_delete_success">Xóa thành công!</string>
+    <string name="device_insert_error">Không thêm được thiết bị. Vui lòng kiểm tra lại!</string>
+    <string name="device_update_error">Chưa sửa được thiết bị. Vui lòng kiểm tra lại!</string>
+    <string name="device_delete_error">Chưa xóa được thiết bị. Vui lòng kiểm tra lại!</string>
+    <string name="device_nochange">Có lỗi xảy ra!</string>
+
+    <!-- Control - Setting -->
+    <string name="check_passsetup_error">Mật khẩu cài đặt không đúng!</string>
+    <string name="check_passlogin_error">Mật khẩu cài đặt không đúng!</string>
+    <string name="check_pass_success">Thay đổi mật khẩu thành công!</string>
+    <string name="change_plogin_success">Thay đổi mật khẩu Login thành công!</string>
+    <string name="change_psetup_success">Thay đổi mật khẩu Setup thành công!</string>
+    <string name="change_plogin_error">Thay đổi mật khẩu Login không thành công!</string>
+    <string name="change_psetup_error">Thay đổi mật khẩu Setup không thành công!</string>
+    <!--Setting-->
+
+    <!--Floor -->
+    <string name="floor_insert_success">Thêm tầng thành công!</string>
+    <string name="floor_update_success">Sửa thành công!</string>
+    <string name="floor_delete_success">Xóa thành công!</string>
+    <string name="floor_insert_error">Không thêm được tầng. Vui lòng kiểm tra lại!</string>
+    <string name="floor_update_error">Chưa sửa được tầng. Vui lòng kiểm tra lại!</string>
+    <string name="floor_delete_error">Chưa xóa được tầng. Vui lòng kiểm tra lại!</string>
+
+
+    <!--DIALOG -->
+    <string name="ms_yes">Có</string>
+    <string name="ms_no">Không</string>
+    <string name="ms_title">Cảnh báo!</string>
+    <string name="ms_content">Bạn có thực sự muốn thoát?</string>
+
+    <!-- START -->
+    <string name="connect">KẾT NỐI</string>
+    <string name="disconnect">NGẮT KẾT NỐI</string>
+    <string name="connecting">ĐANG KẾT NỐI...</string>
+    <string name="check_pass">ĐANG KIỂM TRA MẬT KHẨU...</string>
+    <string name="login">LOGIN</string>
+    <string name="master">Tên phòng</string>
+    <string name="connect_error">Kết nối thất bại</string>
+    <string name="login_error">Đăng nhập thất bại. Kiểm tra lại mật khẩu.</string>
+    <string name="pass">Mật khẩu</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="master_empty">Tên phòng không được để trống</string>
+    <string name="ip_empty">Ip không được để trống</string>
+    <string name="port_empty">Port không được để trống</string>
+    <string name="pass_empty">Mật khẩu không được để trống</string>
+    <string name="not_connect">Không tồn tại kết nối</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="ip">Ip</string>
+    <string name="port">Port</string>
+    <string name="select">Chọn</string>
+    <string name="showhide">Hiển thị</string>
+    <string name="savepass">Lưu</string>
+
+</resources>

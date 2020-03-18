@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/screen"
+    tools:context=".NeurophActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:gravity="center_horizontal"
+        android:text="@string/title"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btnOpen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="openCamera"
+        android:text="@string/open_camera" />
+    <Button
+        android:id="@+id/btnOpenFolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="openFolder"
+        android:text="@string/open_folder" />
+
+    <TextView
+        android:id="@+id/txtAnswer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="@string/tapHere"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+
+</LinearLayout>

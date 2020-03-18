@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Device</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="file:///android_asset/css/bootstrap.min.css">
+	<link rel="stylesheet" href="file:///android_asset/css/font-awesome.min.css">
+	<link rel="stylesheet" href="file:///android_asset/css/w3.css">
+	<link rel="stylesheet" href="file:///android_asset/css/device.css">
+	<script src="file:///android_asset/js/jquery.min.js"></script>
+	<script src="file:///android_asset/js/bootstrap.min.js"></script>
+	<script src="file:///android_asset/js/device.js"></script>
+</head>
+<body>
+	<div class="w3-contain">
+		<div class="w3-display-container" data-spy="affix" data-offset-top="10" style="height:60px;">
+			<div class="container-fluid" style="background-color:black;padding:15px;">
+				<span class="headpanel">QUẢN LÝ THIẾT BỊ</span>
+				<span class="headpanel" style="float:right"><span onclick="backToSetting()" class="glyphicon glyphicon-circle-arrow-left"></span> Quay lại</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="w3-container">
+		<div class="rows text-center" style="margin-top:30px; margin-bottom:20px;">
+			<button id="btnOpenInsert" type="button" class="btnStyle w3-large">THÊM THIẾT BỊ</button>
+		</div>
+
+		<div id='deviceList' class="container-fluid table-responsive w3-contain w3-white">
+		</div>
+
+		<div class="rows text-center" style="margin-top:30px; margin-bottom:20px;">
+			<button id="btnBack" type="button" class="btnStyle w3-large">QUAY LẠI</button>
+		</div>
+		<!-- Modal: Thêm, sửa thông tin thiết bị. -->
+		<div id="modalDevice" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 id="titleModal" class="modal-title"></h4>
+					</div>
+					<div class="modal-body">
+						<div class="rows text-right">
+							<button id="btnDelete" class="btn btn-danger" onclick="deleteDevice()">Delete</button>
+						</div>
+						<hr/>
+						<div>
+							<!--readonly-->
+							<input id="deviceOldId" type="text" class="form-control" style="display:none;"/>
+							<div class="input-group">
+								<span class="input-group-addon" id="mtb">Mã thiết bị: </span>
+								<input id="deviceId" type="text" class="form-control" placeholder="" aria-describedby="mtb" />
+							</div>
+							<div class="input-group">
+								<span class="input-group-addon" id="ttb">Tên thiết bị: </span>
+								<input id="deviceName" type="text" class="form-control" aria-describedby="ttb"/>
+							</div>
+							<div class="input-group">
+								<span class="input-group-addon" id="dc">Địa chỉ: </span>
+								<input id="deviceAddress" type="text" class="form-control" aria-describedby="dc"/>
+							</div>
+							<div class="input-group">
+								<span class="input-group-addon" id="ty">Loại thiết bị: </span>
+								<div class="dropdown">
+									<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"> Chọn
+										<span class="caret"></span></button>
+									<ul class="dropdown-menu">
+										<li><p onclick="setType(this)">A1</p></li>
+										<li><p onclick="setType(this)">B3</p></li>
+									</ul>
+									<input id="deviceType" type="text" style="display:none;" aria-describedby="ty"/>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button id="btnCreate" type="button" class="btn btn-success">Thêm</button>
+						<button id="btnUpdate" class="btn btn-success" >Sửa</button>
+						<button id="btnClose" class="btn btn-default" data-dismiss="modal">Đóng</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>

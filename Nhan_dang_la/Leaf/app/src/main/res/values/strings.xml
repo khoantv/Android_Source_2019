@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Leaf Disease Detect</string>
+    <string name="tapHere">Tap here to select image</string>
+    <string name="title">Đề tài: Nhận Dạng Bệnh Chấm Xám Trên lá Chè </string>
+    <string name="open_camera">Chụp ảnh </string>
+    <string name="open_folder">Chọn ảnh trong máy</string>
+</resources>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FLOOR</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="file:///android_asset/css/bootstrap.min.css">
+	<script src="file:///android_asset/js/jquery.min.js"></script>
+	<script src="file:///android_asset/js/bootstrap.min.js"></script>
+	<script src="file:///android_asset/js/floor.js"></script>
+</head>
+<body>
+	<section class="container">
+	    <div class="col-xs-12 col-sm-12">
+            <div class="rows text-center" style="display: none;">
+                <button type="button" class="btn btn-info" onclick="readOne()">READ</button>
+                <button type="button" class="btn btn-info" onclick="writeOne()">WRITE</button>
+            </div>
+	        <div class="rows text-center" style="margin-top:80px; margin-bottom:20px;">
+	            <button id="btnOpenInsert" type="button" class="btn btn-success">THÊM TẦNG</button>
+	        </div>
+	        <div id='floorList' class="table-responsive">
+	        </div>
+
+	        <!-- Modal -->
+	        <div id="modalFloor" class="modal fade" role="dialog">
+	            <div class="modal-dialog">
+	                <!-- Modal content-->
+	                <div class="modal-content">
+	                    <div class="modal-header">
+	                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	                        <h4 id="titleModal"  class="modal-title"></h4>
+	                    </div>
+	                    <div class="modal-body">
+	                    	<div class="rows text-right">
+	                    		<button id="btnDelete" class="btn btn-danger">Delete</button>
+	                    	</div>
+	                        <div class="rows">
+								<!--readonly-->
+								<input id="floorOldId" type="text" class="form-control" style="display:none;"/>
+								<div class="input-group">
+									<span class="input-group-addon" id="span_id">Mã tầng: </span>
+									<input id="floorId" type="text" class="form-control" placeholder="" aria-describedby="span_id" />
+								</div>
+								<div class="input-group">
+									<span class="input-group-addon" id="span_name">Tên tầng: </span>
+									<input id="floorName" type="text" class="form-control" aria-describedby="span_name"/>
+								</div>
+								<div class="input-group">
+									<span class="input-group-addon" id="span_ip">Ip: </span>
+									<input id="floorIp" type="text" class="form-control" aria-describedby="span_ip"/>
+								</div>
+								<div class="input-group">
+									<span class="input-group-addon" id="span_port">Port: </span>
+									<input id="floorPort" type="text" class="form-control" aria-describedby="span_port"/>
+								</div>
+								<!--<div class="input-group">-->
+									<!--<span class="input-group-addon" id="span_pass">Pass: </span>-->
+									<!--<input id="pass" type="text" class="form-control" aria-describedby="span_pass"/>-->
+								<!--</div>-->
+	                        </div>
+	                    </div>
+	                    <div class="modal-footer">
+	                    	<button id="btnCreate" type="button" class="btn btn-success">Thêm</button>
+	                        <button id="btnUpdate" class="btn btn-success">Sửa</button>
+	                        <button id="btnClose" class="btn btn-default" data-dismiss="modal">Đóng</button>
+	                    </div>
+	                </div>
+
+	            </div>
+	        </div>
+	    </div>
+	</section>
+</body>
+</html>

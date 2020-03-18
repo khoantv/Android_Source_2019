@@ -1,0 +1,120 @@
+/* Note: Try to remove the following lines to see the effect of CSS positioning */
+	  .affix {
+	      top: 0;
+	      width: 100%;
+	      z-index: 9999 !important;
+	  }
+
+	  .affix + .container-fluid {
+	      padding-top: 70px;
+	  }
+
+	  .headpanel{
+            font-size:20px;
+            color:white;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight:bolder;
+        }
+
+       body
+       {
+			background: url('file:///android_asset/images/background.png')
+       }
+
+       .btnStyle {
+           border: solid 1px black;
+           background-color: white;
+           outline: none;
+           color:black;
+           text-align:center;
+           border-radius: 5px;
+       }
+
+       .btnStyle:focus{
+           border: solid 2px white;
+           background-color: gray;
+           color:black;
+       }
+
+       .btnStyle:hover{
+           border: solid 2px white;
+           background-color: gray;
+           color:white;
+       }
+
+.btnStyle {
+    border: solid 2px blue;
+    background-color: transparent;
+    outline: none;
+    color:white;
+    text-align:center;
+    border-radius: 5px;
+    width: 55px;
+    font-size: 35sp;
+    padding: 5px;
+    margin:5px;
+}
+
+.btnStyle:focus{
+    border: solid 2px white;
+    background-color: white;
+    color:black;
+}
+
+.btnStyle:hover{
+    border: solid 2px white;
+    background-color: gray;
+    color:white;
+}
+
+/* loại 1 */
+.onoff1{
+  border: solid 2px red;
+}
+
+.onoff2{
+  border: solid 2px gold;
+}
+
+.onoff3{
+  border: solid 2px #00FF00;
+}
+
+.onoffall{
+  border: solid 2px white;
+  width: 60px;
+}
+
+/* loại 2 */
+.onoff22{
+  border: solid 2px #FF7F50;
+}
+
+.indec{
+  border: solid 2px #9ACD32;
+}
+
+.timer{
+  border: solid 2px #1E90FF;
+  width: 60px;
+}
+
+.temmode{
+  border: solid 2px	#0000FF;
+    width: 60px;
+}
+
+table
+{
+  border: solid 1px white;
+}
+
+table.groupone
+{
+  border: solid 3px#DEB887;
+}
+
+table.grouptwo
+{
+  border: solid 3px	#FFF8DC;
+}

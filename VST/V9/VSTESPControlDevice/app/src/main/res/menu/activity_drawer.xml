@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Tùy chọn"
+        android:id="@+id/nav_option"
+        android:visible="false">
+        <menu>
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/setting"
+                android:title="Cài đặt" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/exit"
+                android:title="Đăng xuất" />
+        </menu>
+    </item>
+
+    <item android:title="Liên lạc">
+        <menu>
+            <item
+                android:id="@+id/home"
+                android:icon="@drawable/home"
+                android:visible="false"
+                android:title="Trang chủ" />
+            <item
+                android:id="@+id/infor"
+                android:icon="@drawable/about"
+                android:title="Thông tin" />
+            <item
+                android:id="@+id/website"
+                android:icon="@drawable/website"
+                android:title="Website" />
+        </menu>
+    </item>
+
+    <item android:title="Truyền thông">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>

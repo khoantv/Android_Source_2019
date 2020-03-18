@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>VST</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="file:///android_asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="file:///android_asset/css/font-awesome.min.css">
+    <link rel="stylesheet" href="file:///android_asset/css/login.css">
+    <link rel="stylesheet" href="file:///android_asset/css/w3.css">
+    <script src="file:///android_asset/js/jquery.min.js"></script>
+    <script src="file:///android_asset/js/bootstrap.min.js"></script>
+    <script src="file:///android_asset/js/login.js"></script>
+
+    <script src="file:///android_asset/js/image_gif.js"></script>
+</head>
+<body style='text-align:center;width:90%;margin:0px auto'>
+<div class="w3-container" style='text-align:center;'>
+
+    <div class="w3-row" style=" margin-top:10px;">
+        <div class="w3-col" style="width:50%">
+            <img style="width:90%" src="file:///android_asset/images/logo.png"/>
+        </div>
+        <div class="w3-col center" style="width:50%">
+            <img style="width:90%" src="file:///android_asset/images/VST.png"/>
+        </div>
+    </div>
+
+    <div class="w3-row">
+        <img style="width:100%; padding-top: 10px;padding-bottom:10px;"
+             src="file:///android_asset/images/name.png"/>
+    </div>
+
+    <div class="w3-panel w3-light-grey w3-round-xlarge">
+        <div class="w3-row w3-blue" style="width:100%; height: 30px">
+
+        </div>
+        <form class="w3-row">
+            <div class="w3-container" style="padding-top:10px">
+                <div class="w3-col">
+                    <input id="pass" type='password' class="form-control w3-animate-input"
+                           placeholder="Pass word"></input>
+                </div>
+            </div>
+
+            <div class="w3-row">
+                <div class=" w3-container w3-cell">
+                    <input id="chkShowHide" class="w3-check" type="checkbox">
+                    <label>Hiển thị mật khẩu</label>
+                </div>
+                <div class="w3-container w3-cell">
+                    <input id="chkSavePass" class="w3-check" type="checkbox" checked="checked">
+                    <label>Lưu mật khẩu</label>
+                </div>
+            </div>
+
+            <div class="w3-container">
+                <div class="w3-col">
+                    <button
+                            class="w3-button w3-block w3-section w3-green w3-ripple w3-padding"
+                            type='button' onclick="Login()">Đăng nhập
+                    </button>
+                    <button
+                            class="w3-button w3-block w3-section w3-blue-grey w3-ripple w3-padding"
+                            type='button' onclick="backToStart()">Quay lại
+                    </button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+    <div id="waitImage" style="width:100%; height: 100px">
+    </div>
+</div>
+</body>
+</html>
